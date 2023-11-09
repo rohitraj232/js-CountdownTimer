@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="stopwatch.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- header -->
+    <h1>Countdown Timer</h1>
+
+    <!-- creating input for date and time -->
+    <table>
+        <thead>
+            <tr>
+                <th class="heading">Enter Date</th>
+                <th class="heading">Enter Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input id="date" type="date"></td>
+                <td><input id="time" type="time"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- here code of three buttons start, stop and reset -->
+    <button id="start" class="startBtn">Start</button>
+    <button id="stop" class="stopBtn">Stop</button>
+    <button id="reset" class="resetBtn">Reset</button>
+
+    <!-- here code of result -->
+    <div class="countdown">
+        <div>
+            <p class="result-title">DAY</p>
+            <div class="data" id="countdown-days">0</div>
+        </div>
+        <div>
+            <p class="result-title">HOURS</p>
+            <div class="data" id="countdown-hours">0</div>
+        </div>
+        <div>
+            <p class="result-title">MINUTES</p>
+            <div class="data" id="countdown-minutes">0</div>
+        </div>
+        <div>
+            <p class="result-title">SECONDS</p>
+            <div class="data" id="countdown-seconds">0</div>
+        </div>
+    </div>
+
+</body>
+
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    text-align: center;
+    background-color: #131313;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2f3640;
+}
+
+h1 {
+    color: #f5f5f5;
+    font-size: 40px;
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    color: #fff;
+}
+
+.heading {
+    font-size: 20px;
+}
+
+input {
+    font-size: 27px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    min-width: 120px;
+    margin: 20px 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    scale: 0.95;
+}
+
+.startBtn {
+    background-color: rgba(1, 194, 1, 0.767);
+    color: white;
+}
+
+.stopBtn {
+    background-color: rgba(228, 22, 22, 0.849);
+    color: white;
+}
+
+.resetBtn {
+    background-color: #0651dde5;
+    color: white;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result-title {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.data {
+    background-color: #090909;
+    color: #fff;
+    font-size: 100px;
+    width: 150px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+
+
+/* media query */
+/* @media all and (min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+} */
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .result-title {
+        font-size: 20px;
+    }  
+    .data {
+        font-size: 40px;
+        width: 100px;
+        margin: 0 10px;
+        border-radius: 5px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .countdown {
+        margin-top: 20px;
+    }
+    .result-title {
+        font-size: 15px;
+    }  
+    .data {
+        font-size: 25px;
+        width: 80px;
+        margin: 0 10px;
+        border-radius: 5px;
+    }
+}
